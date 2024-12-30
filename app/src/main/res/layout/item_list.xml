@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bacground_list"
+    android:padding="10sp"
+    android:layout_marginTop="10sp"
+    android:layout_marginBottom="10sp"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- TextView untuk Nama Kegiatan -->
+            <TextView
+                android:id="@+id/tvNamaKegiatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/tvTanggalKegiatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:layout_marginTop="5sp" />
+
+            <TextView
+                android:id="@+id/tvWaktuKegiatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#666666" />
+
+
+            <!-- Checkbox untuk Menandai Task -->
+            <CheckBox
+                android:id="@+id/cbTaskSelesai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selesai"
+                android:textColor="#666666"
+                android:layout_marginTop="5sp"
+                android:layout_gravity="start" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/btnUbahKegiatan"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginEnd="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/edit"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/btnHapuskegiatan"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginEnd="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/delete"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

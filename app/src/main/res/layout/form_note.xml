@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <!-- Input untuk catatan -->
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textLongMessage"
+        android:textSize="20sp"
+        android:hint="Note" />
+
+    <!-- Pilihan tanggal -->
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Date"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <!-- Pilihan waktu -->
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Time"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <!-- Tombol untuk menyimpan data -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Save" />
+
+</LinearLayout>
